@@ -35,13 +35,13 @@ https://wireframe.cc/2cNp3s
 
 This project will be implemented with the following technologies:
 
-- Canvas API to render the game board.
+- Vanilla Javascript 
 - Webpack to bundle and transpile the source JavaScript code.
 - npm to manage project dependencies.
 
 # Implementation Timeline
 
-- Friday Afternoon & Weekend: Setup project and Git repository. Spend some time to get confortable with Canvas. Figure out and create needed classes. Get the drag strip rendered. 
+- Friday Afternoon & Weekend: Setup project and Git repository. Figure out and create needed classes. Get the drag strip rendered. 
 
 - Monday: Write code to select the cars and implement the toggle switch. Get the photo of the cars and specifications to render on the sides of the page once selected. Have the selection of cars rendered to the bottom of the page. Have the car highlighted in the selection of cars once selected. 
 
