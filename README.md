@@ -23,7 +23,6 @@ In addition, this project will include:
 
 https://wireframe.cc/2cNp3s
 
-
 - The logo will be custom made and show "Drag est".
 - The picture of the car with be slightly opaque with a white background to match the webpage's white background.
 - The specifications of the car will include: year, make, model, engine, horsepower, weight, country of origin, retail price, and quarter mile time.  
@@ -54,7 +53,7 @@ This project will be implemented with the following technologies:
 
 # Bonus features
 
-There are many potential directions this webpage could go. Some predicited upgrades are:
+There are many potential directions this webpage could go, time permitting. Some predicited upgrades are:
 
 - Add option to allow the user to add a car by entering quarter mile to compare to popular cars. 
 - Add a quarter mile time calculator to estiamte quarter mile time based on horsepower, weight, and other configurations of car. 
