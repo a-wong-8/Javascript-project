@@ -1,21 +1,31 @@
 import Car from "./car.js";
 import "./index.scss";
 import { setupSelection } from "./selection";
-import { attachToggleListener } from "./toggle.js";
+import { initToggle } from "./toggle.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const divElementLeftCar = document.querySelector('.left-car');
+    let currentSide = 'left'; // sets default to left 
 
+    initToggle('toggleInput', toggleCallback); //
 
-    attachToggleListener();
+    setupSelection(selectionCallback); //
 
-    setupSelection();
+    function selectionCallback (car) {
+        if (currentSide === 'left') {
+            const divElementLeftCar = document.querySelector('.left-car');
 
-    // divElementLeftCar.innerHTML = `<ul><li>Car: ${this.makemodel} <li>Engine: ${this.engine}</li> <li>Weight: ${this.weight}</li> <li>Quarter mile time: ${this.time}</li> <li>Price: ${this.price}</li></ul>`;
+            divElementLeftCar.innerHTML = `<ul><li>Car: ${car.makemodel} <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time: ${car.time}</li> <li>Price: ${car.price}</li></ul>`;
+        } else {
+            const divElementRightCar = document.querySelector('.right-car');    
 
-    // const divElementRightCar = document.querySelector('.right-car');    
-    // divElementRightCar.innerHTML = `<ul><li>Car: ${this.makemodel}</li> <li>Engine: ${this.engine}</li> <li>Weight: ${this.weight}</li> <li>Quarter mile time: ${this.time}</li> <li>Price: ${this.price}</li></ul>`;
+            divElementRightCar.innerHTML = `<ul><li>Car: ${car.makemodel}</li> <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time: ${car.time}</li> <li>Price: ${car.price}</li></ul>`;
+        }
+    }
+
+    function toggleCallback (side) {
+        currentSide = side;
+    }
 
     // const divElementSelector = document.querySelector('.car-selection');
     // divElementSelector.addEventListener('mouseenter', function() {

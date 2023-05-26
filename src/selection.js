@@ -1,6 +1,6 @@
 import Cars from "../db/seeds.js";
 
-export function setupSelection() {
+export function setupSelection(callback) {
     const ul = document.querySelector('.list-cars');
 
     for (let i = 0; i < 9; i++) {
@@ -10,7 +10,8 @@ export function setupSelection() {
       li.innerHTML = carHtml;
       
       li.addEventListener("click", event => {
-            console.log(event.target); 
+            callback(Cars[i]) // how pass in a car??
+
             // need a left and a right car 
             // populate on click, correct pattern to load left and right 
             // listener on toggle then see if it is left or right 

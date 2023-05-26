@@ -1,5 +1,5 @@
 class Car {
-    constructor() {
+    constructor(makemodel, engine, weight, time, price, img) {
         this.makemodel = makemodel;
         this.engine = engine;
         this.weight = weight;
