@@ -8,3 +8,5 @@ class Car {
         this.img = img;
     }
 }
+
+module.exports = Car;
