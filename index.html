@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="stylesheet" href="./dist/main.css" /> -->
     <link rel="stylesheet" type="text/css" href="./dist/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./dist/main.css" />
     <link rel="stylesheet" type="text/css" href="./dist/styles.css" />
     <script src="./dist/main.js"></script>
     <title>Drag Est</title>
@@ -14,12 +15,16 @@
   </head>
 
   <body>
-    <div class="logo">
-        Drag Est
-    </div> 
-    
-    <div class="left-car">
-
+    <div class="container">
+      
+      <div class="logo">
+        <h1>Drag Est</h1> 
+        <p>A drag race outcome visualizer</p>
+        
+      </div> 
+      
+      <div class="left-car">
+        
     </div>
 
     <div class="drag-strip">
@@ -27,11 +32,15 @@
     </div>
 
     <div class="toggle">
-    
+        <span class="fa-stack">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fa-regular fa-toggle-off fa-stack-1x"></i>
+        </span>
     </div>
 
-    <div class="selection">
-    
+    <div class="car-selection">
+      <ul class="list-cars">
+      </ul>
     </div>
 
     <div class="nav-bar">
@@ -41,7 +50,7 @@
     <div class="right-car">
     
     </div>
-
+</div>
   </body>
 
 </html> 
