@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentSide = 'left'; // sets default to left 
 
-    initToggle('toggleInput', toggleCallback); // takes in the toggle switch position then sets current side to left or right 
+    initToggle('toggleInput', toggleCallback); 
+    // takes in the toggle switch position then sets current side to left or right 
 
     setupSelectionOfCars(selectionCallback); // 
 
@@ -27,11 +28,4 @@ document.addEventListener("DOMContentLoaded", () => {
         currentSide = side;
     }
 
-    // const divElementSelector = document.querySelector('.car-selection');
-    // divElementSelector.addEventListener('mouseenter', function() {
-    //     console.log('works selector!');
-    // })
-    // divElementSelector.addEventListener('click', function() {
-    //     console.log('works click!');
-    // })
   });

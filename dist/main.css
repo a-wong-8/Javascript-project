@@ -78,6 +78,8 @@ ul li {
   height: 400px;
   width: 150px;
   margin: auto;
+  position: relative;
+  background-color: gray;
 }
 
 .logo {
@@ -89,6 +91,28 @@ ul li {
   place-self: center;
   grid-row: 2;
   grid-column: 2;
+}
+
+#left-drag-car {
+  position: absolute;
+  top: 89%;
+  transform: translateY(-50%);
+  width: 50px; /* Adjust size as needed */
+  height: 85px; /* Adjust size as needed */
+  background-color: #ccc;
+  left: 20px; /* Adjust position as needed */
+  border-radius: 10px;
+}
+
+#right-drag-car {
+  position: absolute;
+  top: 89%;
+  transform: translateY(-50%);
+  width: 50px; /* Adjust size as needed */
+  height: 85px; /* Adjust size as needed */
+  background-color: navy;
+  right: 20px; /* Adjust position as needed */
+  border-radius: 10px;
 }
 /*!*********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/toggle.scss ***!

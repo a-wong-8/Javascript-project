@@ -64,7 +64,6 @@ ul li {
 
 .right-car li {
     text-align: right;
-    // list-style-position: outside;
 }
 
 .drag-strip {
@@ -75,6 +74,9 @@ ul li {
     height: 400px;
     width: 150px;
     margin: auto;
+    position: relative;
+    background-color: gray;
+
 }
 
 .logo {
@@ -86,4 +88,25 @@ ul li {
     place-self: center;
     grid-row: 2;
     grid-column: 2;
+}
+
+#left-drag-car {
+    position: absolute;
+    top: 89%;
+    transform: translateY(-50%);
+    width: 50px; /* Adjust size as needed */
+    height: 85px; /* Adjust size as needed */
+    background-color: #ccc;  
+    left: 20px; /* Adjust position as needed */
+    border-radius: 10px;
+}
+#right-drag-car {
+    position: absolute;
+    top: 89%;
+    transform: translateY(-50%);
+    width: 50px; /* Adjust size as needed */
+    height: 85px; /* Adjust size as needed */
+    background-color: navy;  
+    right: 20px; /* Adjust position as needed */
+    border-radius: 10px;
 }
