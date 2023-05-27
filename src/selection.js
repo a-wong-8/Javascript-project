@@ -17,7 +17,6 @@ export function setupSelectionOfCars(callback) {
     }
   }
   
-  // need a left and a right car 
-  // populate on click, correct pattern to load left and right 
-  // listener on toggle then see if it is left or right 
-  // module called set up car and run the commented out code 
+
+  // determine if both sides are selected to start race 
+  // determine how to set finish pos 

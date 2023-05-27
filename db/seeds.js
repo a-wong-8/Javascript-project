@@ -1,7 +1,7 @@
 const img1 = "https://images.cars.com/in/v2/stock_photos/77aeca88-d0af-4824-bbfd-d84ce2538524/1af0ca3f-5236-47a5-a487-32b49ec94f27.png?w=1000"
 
 const car1 = {makemodel: '2004 Honda S2000', engine: '240 hp L4 2.2L', weight: '2835 lbs', time: 14.4, price: '$32,800', img: img1};
-const car2 = {makemodel: '1996 Honda Civic DX', engine: '106 hp l4 1.6L', weight: '2222 lbs', time: 17.1, price: '$12,500', img: img1};
+const car2 = {makemodel: '1991 Mazda Miata MX-5', engine: '116 hp l4 1.6L', weight: '2210 lbs', time: 16.78, price: '$15,869', img: img1};
 const car3 = {makemodel: '2009 Ferrari F430 Scuderia', engine: '503 hp v8 4.3L', weight: '2750 lbs', time: 11.4, price: '$281,000', img: img1};
 const car4 = {makemodel: '2006 Mitsubishi Lancer Evo 9 MR', engine: '286 hp l4 2.0L', weight: '3200 lbs', time: 13.4, price: '$35,000', img: img1};
 const car5 = {makemodel: '2015 Ferrari 458 Italia', engine: '570 hp v8 4.5L', weight: '3274 lbs', time: 10.8, price: '$245,000', img: img1};
