@@ -5,7 +5,7 @@ export function setupSelectionOfCars(callback) {
 
     for (let i = 0; i < Cars.length; i++) {
       const li = document.createElement('li');
-      const carHtml = `${Cars[i].makemodel}`
+      const carHtml = `<img src=${Cars[i].img}>`
       li.setAttribute("grid-item", '');
       li.innerHTML = carHtml;
       

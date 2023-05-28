@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
             leftCarTime = car.time;
 
             const divElementLeftCar = document.querySelector('.left-car');
-
-            divElementLeftCar.innerHTML = `<ul><li>Car: ${car.makemodel} <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time: ${car.time}</li> <li>MSRP: ${car.price}</li></ul>`;
+            // makes the list of specs 
+            divElementLeftCar.innerHTML = `<ul><li>Car: ${car.makemodel} <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time (sec): ${car.time}</li> <li>MSRP: ${car.price}</li></ul>`;
 
         } else {
             rightSelected = true;
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const divElementRightCar = document.querySelector('.right-car');    
 
-            divElementRightCar.innerHTML = `<ul><li>Car: ${car.makemodel}</li> <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time: ${car.time}</li> <li>MSRP: ${car.price}</li></ul>`;
+            divElementRightCar.innerHTML = `<ul><li>Car: ${car.makemodel}</li> <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time (sec): ${car.time}</li> <li>MSRP: ${car.price}</li></ul>`;
         }
 
         if (leftSelected && rightSelected) {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             let car1 = document.querySelector("#left-drag-car");
             let car2 = document.querySelector("#right-drag-car");
             
-            let distance = -385; // Distance to the finish line
+            let distance = -480; // Distance to the finish line
             let car1Position = 1;
             let car2Position = 1;
             
