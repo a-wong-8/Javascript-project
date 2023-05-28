@@ -1,6 +1,6 @@
 const img1 = "1"
 
-const car1 = {makemodel: '2004 Honda S2000', engine: '240 hp L4 2.2L', weight: '2835 lbs', time: 14.4, price: '$32,800', img: './db/smalls2000.png'};
+const car1 = {makemodel: '2004 Honda S2000', engine: '240 hp L4 2.2L', weight: '2835 lbs', time: 14.4, price: '$32,800', img: './db/smalls2000.png', bigimg: './db/s2000-2.png'};
 const car2 = {makemodel: '1991 Mazda Miata MX-5', engine: '116 hp l4 1.6L', weight: '2210 lbs', time: 16.78, price: '$15,869', img: './db/smallmiata.png'};
 const car3 = {makemodel: '2009 Ferrari F430 Scuderia', engine: '503 hp v8 4.3L', weight: '2750 lbs', time: 11.4, price: '$281,000', img: './db/smallscud.png'};
 const car4 = {makemodel: '2006 Mitsubishi Lancer Evo 9 MR', engine: '286 hp l4 2.0L', weight: '3200 lbs', time: 13.4, price: '$35,000', img: './db/smallevo.png'};

@@ -16,7 +16,3 @@ export function setupSelectionOfCars(callback) {
         ul.appendChild(li);
     }
   }
-  
-
-  // determine if both sides are selected to start race 
-  // determine how to set finish pos 
