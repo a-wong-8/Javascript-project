@@ -44,7 +44,7 @@ body {
     list-style: none;
     // border: 1px solid black;
     display: flex;
-    grid-column: 2/3;
+    grid-column: 2;
     grid-row: 3;
     justify-content: center;
     width: 500px;
@@ -54,7 +54,7 @@ body {
 .car-selection-container > ul > li img {
     height: 99px;
     width: 99px;
-    border-radius: 5px;
+    border-radius: 10px;
     opacity: 0.65;
     z-index: 1;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -67,13 +67,15 @@ body {
     width: 105px;
     position: absolute;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    // grid-auto-rows: minmax(100px, auto);
+    grid-template-rows: 460px 90px 200px; /* Adjust the row sizes as needed */
 }
 
 .left-car ul > li, .right-car ul li {
@@ -86,13 +88,13 @@ body {
 .left-car {
     margin-left: 20px;
     display: grid;
-    grid-column: 1/3;
+    grid-column: 1;
     grid-row: 3;
 }
 
 .right-car {
     display: grid;
-    grid-column: 3/3;
+    grid-column: 3;
     grid-row: 3;
     direction: rtl;
     margin-right: 20px;
@@ -112,7 +114,7 @@ body {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -124,6 +126,13 @@ body {
     place-self: center;
     grid-row: 2;
     grid-column: 2;
+    // justify-self: start;
+}
+
+.toggle-container-div {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 .toggle-text {
@@ -166,28 +175,51 @@ body {
 .left-car-pic {
     display: grid;
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 1;
     position: relative;
-    width: 200px; /* Adjust the container width as needed */
-    height: 100px; /* Adjust the container height as needed */
-    overflow: hidden;  
+    width: auto; /* Adjust the container width as needed */
+    height: 300px; /* Adjust the container height as needed */
+    // overflow: hidden;  
+    justify-content: center;
+    align-items: center;
 }
 
 .left-car-pic img {
-    display: grid;
+    display: flex;
     position: absolute;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
     width: 100%;
     height: 100%;
-    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); /* Clip the image to show only the left half */
+    // clip-path: polygon(0 0, 60% 0, 60% 100%, 0 100%); /* Clip the image to show only the left half */
+    transform: scaleX(-1);
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 500px;
+    overflow: hidden;
 }
 
 .right-car-pic {
     display: grid;
     grid-column: 3;
-    grid-row: 2;
-    width: 100px;
-    height: auto;
-    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); /* Clip the image to show only the left half */
+    grid-row: 1;
+    position: relative;
+    width: 400px; /* Adjust the container width as needed */
+    height: 300px; /* Adjust the container height as needed */
+    // overflow: hidden;  
+    justify-content: center;
+    align-items: center;
+}
+
+.right-car-pic img {
+    display: flex;
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+    // clip-path: polygon(0 0, 60% 0, 60% 100%, 0 100%); /* Clip the image to show only the left half */
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 500px;
 }
