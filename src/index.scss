@@ -51,7 +51,6 @@ body {
 }
 
 .grid-item {
-    /* Styles for grid items */
     background-color: #ccc;
     padding: 20px;
     border: 1px solid black;
@@ -74,7 +73,7 @@ body {
     border-radius: 10px;
     opacity: 0.60;
     z-index: 1;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1.0);
 }
 
 .car-selection-container > ul > li img:hover {
@@ -167,14 +166,6 @@ body {
     top: 465px;
 }
 
-// .left-lane .animate {
-//     transition: left 3s linear; /* for smooth movement */
-//     animation-duration: 3s;
-//     animation-timing-function: linear;
-//     animation-fill-mode: backwards;
-//     animation-name: carAnimationLeft;
-// }
-  
 #right-drag-car {
     position: absolute;
     transform: translateY(-50%);
@@ -229,4 +220,9 @@ body {
     align-items: center;
     max-height: 100%;
     max-width: 100%;
+}
+
+.left-chart {
+    grid-column: 1;
+    grid-row: 3
 }

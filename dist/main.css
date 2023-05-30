@@ -53,7 +53,6 @@ body {
 }
 
 .grid-item {
-  /* Styles for grid items */
   background-color: #ccc;
   padding: 20px;
   border: 1px solid black;
@@ -76,7 +75,7 @@ body {
   border-radius: 10px;
   opacity: 0.6;
   z-index: 1;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 .car-selection-container > ul > li img:hover {
@@ -222,6 +221,11 @@ body {
   max-height: 100%;
   max-width: 100%;
 }
+
+.left-chart {
+  grid-column: 1;
+  grid-row: 3;
+}
 /*!*********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/toggle.scss ***!
   \*********************************************************************************************************************************************/
@@ -243,7 +247,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background: linear-gradient(to right, #999, #bbb); /* Gradient colors */
   transition: 0.4s;
   border-radius: 34px;
 }
@@ -255,13 +259,13 @@ body {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background: linear-gradient(to right, white, #ccc); /* Gradient colors */
   transition: 0.4s;
   border-radius: 50%;
 }
 
 .toggle-input:checked + .toggle-slider {
-  background-color: rgb(234, 51, 35);
+  background: linear-gradient(to right, #999, #aaa); /* Gradient colors */
 }
 
 .toggle-input:checked + .toggle-slider:before {
