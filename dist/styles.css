@@ -1,0 +1,17 @@
+@keyframes carAnimationLeft {
+    /* from {
+     top: 465px;
+    } */
+     to {
+     top: PLACEHOLDER_VALUE;
+    }
+     }
+
+@keyframes carAnimationRight {
+    /* from {
+        top: 465px; */
+    /* } */
+        to { 
+            top: PLACEHOLDER_VALUE;
+    }
+        }

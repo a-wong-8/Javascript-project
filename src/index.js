@@ -61,8 +61,26 @@ document.addEventListener("DOMContentLoaded", () => {
                 car1Position = 0;
             }
             
-            car1.style.top = car1Position * distance + "px";
-            car2.style.top = car2Position * distance + "px";
+            // car1.style.top = car1Position * distance + "px";
+            // car2.style.top = car2Position * distance + "px";
+
+            let car1top = car1Position * distance + "px";
+            let car2top = car2Position * distance + "px";
+            
+            const styleSheet = document.styleSheets[2];
+
+            car1.style.animation = 'carAnimationLeft 3s linear forwards';
+            const keyframesLeft = styleSheet.cssRules[0];
+            keyframesLeft.deleteRule(0);
+            keyframesLeft.appendRule(`to { top: ${car1top}; }`);
+          
+            car2.style.animation = 'carAnimationRight 3s linear forwards';
+            const keyframesRight = styleSheet.cssRules[1];
+            keyframesRight.deleteRule(0);
+            keyframesRight.appendRule(`to { top: ${car2top}; }`);
+
+            car1.classList.add('animate'); // adds animate after both cars selected 
+            car2.classList.add('animate');
             }
     }      
   });
