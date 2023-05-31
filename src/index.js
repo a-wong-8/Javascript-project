@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             leftCarTime = car.time;
 
             const divElementLeftCar = document.querySelector('.left-car'); // makes the list of specs 
-            divElementLeftCar.innerHTML = `<ul><li>Car: ${car.makemodel} <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time (sec): ${car.time}</li> <li>MSRP: ${car.price}</li></ul>`;
+            divElementLeftCar.innerHTML = `<ul><li>Car: ${car.makemodel} <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time (sec): ${car.time}</li> <li>Fuel Economy: ${car.mpg}</li> <li>Retail Price: ${car.price}</li></ul>`;
 
             const divElementLeftCarPic = document.querySelector('.left-car-pic'); // makes the left pic
             divElementLeftCarPic.innerHTML = `<img src=${car.bigimg}></img>`;
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rightCarTime = car.time;
 
             const divElementRightCar = document.querySelector('.right-car');    
-            divElementRightCar.innerHTML = `<ul><li>Car: ${car.makemodel}</li> <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time (sec): ${car.time}</li> <li>MSRP: ${car.price}</li></ul>`;
+            divElementRightCar.innerHTML = `<ul><li>Car: ${car.makemodel}</li> <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time (sec): ${car.time}</li> <li>Fuel Economy: ${car.mpg}</li> <li>Retail Price: ${car.price}</li></ul>`;
 
             const divElementRightCarPic = document.querySelector('.right-car-pic'); // makes the right pic
             divElementRightCarPic.innerHTML = `<img src=${car.bigimg}></img>`;
