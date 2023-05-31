@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     // background-color: rgb(234, 51, 35);
-    background: linear-gradient(to right, rgb(165, 51, 35), rgb(234, 51, 35)); /* Gradient colors */
+    background: linear-gradient(to right, rgb(165, 51, 35), rgb(234, 51, 35));
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 5px;
@@ -203,7 +203,7 @@ body {
 .left-car-pic img {
     display: flex;
     position: absolute;
-    width: 450px;
+    width: 100%;
     height: auto;
     transform: scaleX(-1);
     max-width: 100%;
@@ -225,7 +225,7 @@ body {
 .right-car-pic img {
     display: flex;
     position: absolute;
-    width: 450px;
+    width: 100%;
     height: auto;
     padding-top: 500px;
     justify-content: center;
