@@ -77,8 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
             keyframesRight.deleteRule(0);
             keyframesRight.appendRule(`to { top: ${car2top}; }`);
         }
-
-        // setTimeout(resetCars, 10000);
     
         function resetCars () {
             let car1 = document.querySelector("#left-drag-car");
@@ -107,7 +105,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const restart = document.querySelector('.restart img');
 
         restart.addEventListener('click', event => {
-            resetCars()
+            // resetCars();
+            location.reload();
         })
     }      
   });

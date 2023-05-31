@@ -17,7 +17,7 @@ header {
 header > .logo {
     font-size: 22px;
     font-family: 'arial';
-    color: azure;
+    color: white;
     text-align: left;
     padding-top: 10px;
     padding-left: 20px;
@@ -206,8 +206,6 @@ body {
     width: 100%;
     height: auto;
     transform: scaleX(-1);
-    max-width: 100%;
-    max-height: 100%;
     padding-top: 500px;
 }
 
@@ -230,8 +228,6 @@ body {
     padding-top: 500px;
     justify-content: center;
     align-items: center;
-    max-height: 100%;
-    max-width: 100%;
 }
 
 .restart {
