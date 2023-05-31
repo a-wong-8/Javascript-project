@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
             keyframesRight.appendRule(`to { top: ${car2top}; }`);
         }
 
-        setTimeout(resetCars, 10000);
+        // setTimeout(resetCars, 10000);
     
         function resetCars () {
             let car1 = document.querySelector("#left-drag-car");
@@ -87,6 +87,27 @@ document.addEventListener("DOMContentLoaded", () => {
             car2.style.animation = 'none';
             car1.style.top = '465px';
             car2.style.top = '465px';
+
+            const divElementLeftCar = document.querySelector('.left-car'); 
+            const divElementRightCar = document.querySelector('.right-car');
+
+            divElementLeftCar.innerHTML = '';
+            divElementRightCar.innerHTML = '';
+
+            const divElementLeftCarPic = document.querySelector('.left-car-pic');
+            const divElementRightCarPic = document.querySelector('.right-car-pic');
+
+            divElementLeftCarPic.innerHTML = '';
+            divElementRightCarPic.innerHTML = '';
+
+            leftSelected = false;
+            rightSelected = false;
         }
+
+        const restart = document.querySelector('.restart img');
+
+        restart.addEventListener('click', event => {
+            resetCars()
+        })
     }      
   });

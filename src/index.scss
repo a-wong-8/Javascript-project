@@ -5,7 +5,8 @@ ul li {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(234, 51, 35);
+    // background-color: rgb(234, 51, 35);
+    background: linear-gradient(to right, rgb(165, 51, 35), rgb(234, 51, 35)); /* Gradient colors */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 5px;
@@ -233,7 +234,14 @@ body {
     max-width: 100%;
 }
 
-.left-chart {
-    grid-column: 1;
-    grid-row: 3
+.restart {
+    display: grid;
+    place-self: center;
+    grid-column: 2;
+    grid-row: 2;
+    padding-right: 110px;
+}
+
+.restart img {
+    height: 40px;
 }

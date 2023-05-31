@@ -6,19 +6,19 @@ export function attachToggleListener(id, callback) {
 }
 
 export function initToggle(id, callback) {
-    var toggleInput = document.getElementById(id);
+    let toggleInput = document.getElementById(id);
 
     function toggleWidget() {
-      var isChecked = toggleInput.checked;
+      let isChecked = toggleInput.checked;
 
       if (isChecked) {
         // Widget is turned on
         callback('right')
-        console.log("Widget is RIGHT");
+        // console.log("Widget is RIGHT");
       } else {
         // Widget is turned off
         callback('left')
-        console.log("Widget is LEFT");
+        // console.log("Widget is LEFT");
       }
     }
 
