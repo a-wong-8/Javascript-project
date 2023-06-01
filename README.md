@@ -1,4 +1,4 @@
-# Drag Est - A quarter mile drag race outcome visualizer 
+# a/A auto Analyzer - A quarter mile drag race outcome visualizer 
 
 # Background 
 
