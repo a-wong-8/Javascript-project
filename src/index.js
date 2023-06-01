@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   label: 'Ratings',
                   data: [car.speed, car.priceRating, car.mpgRating],
                   borderWidth: 1,
-                  backgroundColor: 'rgb(165, 51, 35, 0.5)]',
+                  backgroundColor: '#A5332380'
                 }]
               },
               options: {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   label: 'Ratings',
                   data: [car.speed, car.priceRating, car.mpgRating],
                   borderWidth: 1,
-                  backgroundColor: 'rgba(165, 51, 35, 0.5)]'
+                  backgroundColor: '#A5332380'
                 }]
               },
               options: {
