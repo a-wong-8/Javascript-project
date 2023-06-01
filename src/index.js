@@ -37,14 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
             
             let ctx = document.getElementById('myChart');
 
-            const chart = new Chart(ctx, {
+            const chart = new Chart(ctx, { // chart is from chartjs.org
               type: 'bar',
               data: {
                 labels: ['Speed', 'Price', 'Fuel Economy'],
                 datasets: [{
                   label: 'Ratings',
-                  data: [1, 2, 3],
-                  borderWidth: 1
+                  data: [car.speed, car.priceRating, car.mpgRating],
+                  borderWidth: 1,
+                  backgroundColor: 'rgb(165, 51, 35, 0.5)]',
                 }]
               },
               options: {
@@ -56,13 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
               }
             });
-
-            function updateChartData(newData) {
-                chart.data.datasets[0].data = newData;
-                chart.update();
-              }
-              
-              updateChartData([car.speed, car.priceRating, car.mpgRating]);
 
         } else {
             rightSelected = true;
@@ -80,14 +74,15 @@ document.addEventListener("DOMContentLoaded", () => {
             
             let ctx = document.getElementById('myChartRight');
 
-            const chart = new Chart(ctx, {
+            const chart = new Chart(ctx, { // chart is from chartjs.org
               type: 'bar',
               data: {
                 labels: ['Speed', 'Price', 'Fuel Economy'],
                 datasets: [{
                   label: 'Ratings',
-                  data: [1, 2, 3],
-                  borderWidth: 1
+                  data: [car.speed, car.priceRating, car.mpgRating],
+                  borderWidth: 1,
+                  backgroundColor: 'rgba(165, 51, 35, 0.5)]'
                 }]
               },
               options: {
@@ -100,11 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
               }
             });
 
-            function updateChartData(newData) {
-                chart.data.datasets[0].data = newData;
-                chart.update();
-              }
-              updateChartData([car.speed, car.priceRating, car.mpgRating]);
         }
 
         if (leftSelected && rightSelected) {
