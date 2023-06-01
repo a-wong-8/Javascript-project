@@ -27,28 +27,90 @@ document.addEventListener("DOMContentLoaded", () => {
             leftCarTime = car.time;
 
             const divElementLeftCar = document.querySelector('.left-car'); // makes the list of specs 
-            divElementLeftCar.innerHTML = `<ul><li>Car: ${car.makemodel} <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time (sec): ${car.time}</li> <li>Fuel Economy: ${car.mpg}</li> <li>Retail Price: ${car.price}</li></ul>`;
+            divElementLeftCar.innerHTML = `<ul><li>Car: ${car.makeModel} <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time (sec): ${car.time}</li> <li>Fuel Economy: ${car.mpg}</li> <li>Retail Price: ${car.price}</li></ul>`;
 
             const divElementLeftCarPic = document.querySelector('.left-car-pic'); // makes the left pic
             divElementLeftCarPic.innerHTML = `<img src=${car.bigimg}></img>`;
+
+            let leftChart = document.querySelector('.left-chart'); // makes left chart 
+            leftChart.innerHTML = '<canvas  id="myChart" ></canvas>';
+            
+            let ctx = document.getElementById('myChart');
+
+            const chart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ['Speed', 'Price', 'Fuel Economy'],
+                datasets: [{
+                  label: 'Ratings',
+                  data: [1, 2, 3],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    suggestedMax: 10
+                  }
+                }
+              }
+            });
+
+            function updateChartData(newData) {
+                chart.data.datasets[0].data = newData;
+                chart.update();
+              }
+              
+              updateChartData([car.speed, car.priceRating, car.mpgRating]);
 
         } else {
             rightSelected = true;
             rightCarTime = car.time;
 
             const divElementRightCar = document.querySelector('.right-car');    
-            divElementRightCar.innerHTML = `<ul><li>Car: ${car.makemodel}</li> <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time (sec): ${car.time}</li> <li>Fuel Economy: ${car.mpg}</li> <li>Retail Price: ${car.price}</li></ul>`;
+            divElementRightCar.innerHTML = `<ul><li>Car: ${car.makeModel}</li> <li>Engine: ${car.engine}</li> <li>Weight: ${car.weight}</li> <li>Quarter mile time (sec): ${car.time}</li> <li>Fuel Economy: ${car.mpg}</li> <li>Retail Price: ${car.price}</li></ul>`;
 
             const divElementRightCarPic = document.querySelector('.right-car-pic'); // makes the right pic
             divElementRightCarPic.innerHTML = `<img src=${car.bigimg}></img>`;
+
+
+            let leftChart = document.querySelector('.right-chart');
+            leftChart.innerHTML = '<canvas  id="myChartRight" ></canvas>';
+            
+            let ctx = document.getElementById('myChartRight');
+
+            const chart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ['Speed', 'Price', 'Fuel Economy'],
+                datasets: [{
+                  label: 'Ratings',
+                  data: [1, 2, 3],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    suggestedMax: 10
+                  }
+                }
+              }
+            });
+
+            function updateChartData(newData) {
+                chart.data.datasets[0].data = newData;
+                chart.update();
+              }
+              updateChartData([car.speed, car.priceRating, car.mpgRating]);
         }
 
         if (leftSelected && rightSelected) {
 
             let car1 = document.querySelector("#left-drag-car");
             let car2 = document.querySelector("#right-drag-car");
-            // window.car1 = car1;
-            // window.car2 = car2;
 
             let distance = -480; // Distance to the finish line
             let car1Position = 1;
@@ -77,35 +139,10 @@ document.addEventListener("DOMContentLoaded", () => {
             keyframesRight.deleteRule(0);
             keyframesRight.appendRule(`to { top: ${car2top}; }`);
         }
-    
-        function resetCars () {
-            let car1 = document.querySelector("#left-drag-car");
-            let car2 = document.querySelector("#right-drag-car");
-            car1.style.animation = 'none';
-            car2.style.animation = 'none';
-            car1.style.top = '465px';
-            car2.style.top = '465px';
-
-            const divElementLeftCar = document.querySelector('.left-car'); 
-            const divElementRightCar = document.querySelector('.right-car');
-
-            divElementLeftCar.innerHTML = '';
-            divElementRightCar.innerHTML = '';
-
-            const divElementLeftCarPic = document.querySelector('.left-car-pic');
-            const divElementRightCarPic = document.querySelector('.right-car-pic');
-
-            divElementLeftCarPic.innerHTML = '';
-            divElementRightCarPic.innerHTML = '';
-
-            leftSelected = false;
-            rightSelected = false;
-        }
 
         const restart = document.querySelector('.restart img');
 
         restart.addEventListener('click', event => {
-            // resetCars();
             location.reload();
         })
     }      

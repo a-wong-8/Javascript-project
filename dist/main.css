@@ -118,15 +118,17 @@ body {
   margin-left: 20px;
   display: grid;
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 1;
+  padding-top: 50px;
 }
 
 .right-car {
   display: grid;
   grid-column: 3;
-  grid-row: 3;
+  grid-row: 1;
   direction: rtl;
   margin-right: 20px;
+  padding-top: 50px;
 }
 
 .right-car li {
@@ -240,6 +242,20 @@ body {
 
 .restart img {
   height: 40px;
+}
+
+.left-chart {
+  grid-column: 1;
+  grid-row: 3;
+  padding-bottom: 20px;
+}
+
+.right-chart {
+  display: flex;
+  grid-column: 3;
+  grid-row: 3;
+  padding-bottom: 20px;
+  justify-content: right;
 }
 /*!*********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/toggle.scss ***!
