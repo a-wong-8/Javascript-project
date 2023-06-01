@@ -245,9 +245,11 @@ body {
 }
 
 .left-chart {
+    display: flex;
     grid-column: 1;
     grid-row: 3;
     padding-bottom: 20px;
+    justify-content: center;
 }
 
 .right-chart {
@@ -255,5 +257,5 @@ body {
     grid-column: 3;
     grid-row: 3;
     padding-bottom: 20px;
-    justify-content: right;
+    justify-content: center;
 }

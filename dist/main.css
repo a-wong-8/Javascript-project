@@ -245,9 +245,11 @@ body {
 }
 
 .left-chart {
+  display: flex;
   grid-column: 1;
   grid-row: 3;
   padding-bottom: 20px;
+  justify-content: center;
 }
 
 .right-chart {
@@ -255,7 +257,7 @@ body {
   grid-column: 3;
   grid-row: 3;
   padding-bottom: 20px;
-  justify-content: right;
+  justify-content: center;
 }
 /*!*********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/toggle.scss ***!
