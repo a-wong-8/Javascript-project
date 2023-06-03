@@ -1,10 +1,5 @@
 import "./styles/toggle.scss";
 
-// export function attachToggleListener(id, callback) {
-//     const toggleElement = document.querySelector(id);
-//     toggleElement.addEventListener('click', callback)
-// }
-
 export function initToggle(id, callback) {
     let toggleInput = document.getElementById(id);
 

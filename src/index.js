@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
               data: {
                 labels: ['Speed', 'Price', 'Fuel Economy'],
                 datasets: [{
-                  label: 'Ratings',
+                  label: 'Rating',
                   data: [car.speed, car.priceRating, car.mpgRating],
                   borderWidth: 1,
                   backgroundColor: '#A5332380'
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
               data: {
                 labels: ['Speed', 'Price', 'Fuel Economy'],
                 datasets: [{
-                  label: 'Ratings',
+                  label: 'Rating',
                   data: [car.speed, car.priceRating, car.mpgRating],
                   borderWidth: 1,
                   backgroundColor: '#A5332380'
