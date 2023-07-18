@@ -14,6 +14,8 @@ header {
   margin-bottom: 5px;
   width: 100%;
   height: 40px;
+  z-index: 1;
+  position: relative;
 }
 
 header > .logo {
@@ -220,6 +222,7 @@ body {
   height: 300px; /* Adjust the container height */
   align-items: center;
   justify-content: center;
+  z-index: 0;
 }
 
 .right-car-pic img {
