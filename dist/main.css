@@ -295,15 +295,41 @@ body {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background: linear-gradient(to right, white, #ccc); /* Gradient colors */
+  background: linear-gradient(to right, white, #ccc);
   transition: 0.4s;
   border-radius: 50%;
 }
 
 .toggle-input:checked + .toggle-slider {
-  background: linear-gradient(to right, #999, #aaa); /* Gradient colors */
+  background: linear-gradient(to right, #999, #aaa);
 }
 
 .toggle-input:checked + .toggle-slider:before {
   transform: translateX(26px);
 }
+
+/* @media screen and (max-width: 1200px) {
+
+  html, body {
+    width: 390px;
+  }
+
+  .car-selection-container {
+    width: 400px;
+    justify-content:flex-start;
+  }
+
+  .car-selection-container ul li img {
+    width: 52px;
+    height: 50px;
+  }
+
+  .drag-strip {
+    margin-left: 0;
+  }
+
+  .toggle-text {
+    width: 300px;
+    font-size: 16px;
+  }
+} */
