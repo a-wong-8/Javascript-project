@@ -18,8 +18,7 @@ In a/A auto Analyzer, users will be able to:
 
 ![Alt Text](./Screenshot%202023-07-24%20at%206.35.01%20PM.png)
 
-# Wireframe
-
+# Layout
 
 - The picture of the car with be slightly opaque with a grey background to match the webpage's grey background.
 - The specifications of the car will include: year, make, model, engine, horsepower, weight, country of origin, retail price, and quarter mile time.  
@@ -27,8 +26,6 @@ In a/A auto Analyzer, users will be able to:
 - Under the drag strip will be a toggle switch to switch between the selection of left car and right car. 
 - Under the toggle switch will be the selection of 10 popular cars from various regions.
 - Nav links include links to the project's Github repository, creator's LinkedIn, and About section.
-
-![Wireframe](./wireframe.png)
 
 # Technologies, Libraries, APIs
 
