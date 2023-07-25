@@ -1,6 +1,7 @@
 # a/A auto Analyzer - An automotive data visualizer 
 
-![Alt Text](/aA.gif)
+![Alt Text](./Screenshot%202023-07-24%20at%206.35.01%20PM.png)
+
 
 # Background 
 
@@ -10,13 +11,52 @@ There will a wide selection of vehicles varying from sports cars to economy cars
 
 # Functionality & MVPs
 
+![Alt Text](/aA.gif)
+
 In a/A auto Analyzer, users will be able to:
 
 - Select from a selection of popular vehicles to compare quarter mile drag race outcome.
 - View the specifications of the selected vehicle.
 - View a photograph of the selected vehicle.
 
-![Alt Text](./Screenshot%202023-07-24%20at%206.35.01%20PM.png)
+# Drag Race Algorithm 
+
+a/A auto Analyzer uses a complex algorithm to calulate the distance that the faster vehicle will win by in a quarter mile race based on quarter mile times supplied by the manufacturer.  
+
+```
+if (leftSelected && rightSelected) {
+
+            let car1 = document.querySelector("#left-drag-car");
+            let car2 = document.querySelector("#right-drag-car");
+
+            let distance = -480; // Distance to the finish line
+            let car1Position = 1;
+            let car2Position = 1;
+            
+            if (leftCarTime > rightCarTime) {
+                car1Position = (rightCarTime / leftCarTime) - 1; // gets % - 1
+                car2Position = 0;
+            } else {
+                car2Position = (leftCarTime / rightCarTime) - 1;
+                car1Position = 0;
+            }
+
+            let car1top = car1Position * distance + "px";
+            let car2top = car2Position * distance + "px";
+            
+            const styleSheet = document.styleSheets[2];
+
+            car1.style.animation = 'carAnimationLeft 3s linear forwards';
+            const keyframesLeft = styleSheet.cssRules[0];
+            keyframesLeft.deleteRule(0);
+            keyframesLeft.appendRule(`to { top: ${car1top}; }`);
+          
+            car2.style.animation = 'carAnimationRight 3s linear forwards';
+            const keyframesRight = styleSheet.cssRules[1];
+            keyframesRight.deleteRule(0);
+            keyframesRight.appendRule(`to { top: ${car2top}; }`);
+        }
+```
 
 # Layout
 
