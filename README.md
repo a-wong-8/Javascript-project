@@ -1,7 +1,6 @@
-# a/A auto Analyzer - An automotive data visualizer 
+# a/A auto Analyzer - an automotive data visualizer 
 
 ![Alt Text](./Screenshot%202023-07-24%20at%206.35.01%20PM.png)
-
 
 # Background 
 
