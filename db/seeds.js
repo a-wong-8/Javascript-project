@@ -18,6 +18,6 @@ const car8 = {makeModel: '2015 Nissan GT-R Premium', engine: '545 hp V6 3.8L', w
 
 const car9 = {makeModel: '2015 Toyota Prius', engine: '98 hp L4 1.8L Hybrid', weight: '3072 lbs', time: 17.9, price: '$30,000', img: './db/smallprius.png', bigimg: './db/prius.png', mpg: '53 city / 46 hwy', speed: 2, priceRating: 3, mpgRating: 9};
 
-const car10 = {makeModel: '2006 Chevrolet Corvette Z06', engine: '505 hp V8 7.0L', weight: '3130 lbs', time: 11.5, price: '$65,800', img: './db/smallz06.png', bigimg: './db/z06.png', mpg: '18 city / 28 hwy', speed: 9, priceRating: 6, mpgRating: 5};
+const car10 = {makeModel: '2006 Chevrolet Corvette Z06', engine: '505 hp V8 7.0L', weight: '3130 lbs', time: 11.5, price: '$65,800', img: './db/smallz06.png', bigimg: './db/z06.png', mpg: '18 city / 28 hwy', speed: 8, priceRating: 6, mpgRating: 5};
 
 module.exports = [car1, car2, car3, car4, car5, car6, car7, car8, car9, car10];
