@@ -32,7 +32,8 @@ header > .logo {
   margin-right: 20px;
   align-items: center;
   color: white;
-  font-size: 32px;
+  font-size: 35px;
+  text-decoration: none;
 }
 
 .linkedin {
@@ -42,6 +43,7 @@ header > .logo {
   justify-content: flex-end;
   margin-right: 50px;
   align-items: center;
+  text-decoration: none;
 }
 
 body {
@@ -90,7 +92,6 @@ body {
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
   transition: transform 0.3s ease;
   transform: scale(1);
-  
 }
 
 .car-selection-container > ul > li img:hover {
