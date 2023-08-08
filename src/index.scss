@@ -259,3 +259,25 @@ body {
     padding-bottom: 20px;
     justify-content: center;
 }
+
+.go {
+    display: grid;
+    place-self: center;
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 120px;
+}
+
+.go span {
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #aaa;
+}
+
+.go span:hover {
+    cursor: pointer;
+}
+
+.restart img:hover {
+    cursor: pointer;
+}
