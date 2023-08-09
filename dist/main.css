@@ -43,7 +43,6 @@ header > .logo {
   justify-content: flex-end;
   margin-right: 50px;
   align-items: center;
-  text-decoration: none;
 }
 
 body {
@@ -100,7 +99,6 @@ body {
   position: absolute;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transform: scale(1.1);
 }
 
 .container {
