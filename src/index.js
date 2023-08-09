@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
 
-        if (leftSelected && rightSelected) {
+        function startRace() {
 
             let car1 = document.querySelector("#left-drag-car");
             let car2 = document.querySelector("#right-drag-car");
@@ -134,6 +134,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         restart.addEventListener('click', event => {
             location.reload();
+        })
+
+        const goButton = document.querySelector('.go span');
+
+        goButton.addEventListener('click', event => {
+          startRace();
         })
     }      
   });

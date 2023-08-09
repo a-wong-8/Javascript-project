@@ -88,16 +88,17 @@ body {
   opacity: 0.6;
   z-index: 1;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .car-selection-container > ul > li img:hover {
   opacity: 1;
   z-index: 2;
-  height: 105px;
-  width: 105px;
   position: absolute;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .container {
@@ -258,6 +259,28 @@ body {
   grid-row: 3;
   padding-bottom: 20px;
   justify-content: center;
+}
+
+.go {
+  display: grid;
+  place-self: center;
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: 120px;
+}
+
+.go span {
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #aaa;
+}
+
+.go span:hover {
+  cursor: pointer;
+}
+
+.restart img:hover {
+  cursor: pointer;
 }
 /*!*********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/toggle.scss ***!
