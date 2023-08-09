@@ -99,6 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         function startRace() {
 
+          if (leftSelected && rightSelected) {
+            
             let car1 = document.querySelector("#left-drag-car");
             let car2 = document.querySelector("#right-drag-car");
 
@@ -129,6 +131,8 @@ document.addEventListener("DOMContentLoaded", () => {
             keyframesRight.deleteRule(0);
             keyframesRight.appendRule(`to { top: ${car2top}; }`);
         }
+      }
+
 
         const restart = document.querySelector('.restart img');
 
