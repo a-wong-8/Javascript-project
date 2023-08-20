@@ -284,3 +284,14 @@ body {
 .restart img:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {
+    header {
+        width: 100vw;
+    }
+
+    .car-selection-container {
+        width: 300px;
+        height: auto;
+    }
+}
