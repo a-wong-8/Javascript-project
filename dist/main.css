@@ -46,6 +46,14 @@ header > .logo {
   text-decoration: none;
 }
 
+.linkedin:hover {
+  color: #ddd;
+}
+
+.github-link:hover {
+  color: #ddd;
+}
+
 body {
   background-color: rgb(230, 230, 230);
 }
@@ -279,6 +287,7 @@ body {
 
 .go span:hover {
   cursor: pointer;
+  color: gray;
 }
 
 .restart img:hover {
