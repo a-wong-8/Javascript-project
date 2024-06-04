@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   label: 'Rating',
                   data: [car.speed, car.priceRating, car.mpgRating],
                   borderWidth: 1,
-                  backgroundColor: '#A5332380'
+                  backgroundColor: '#A5332380',
                 }]
               },
               options: {
