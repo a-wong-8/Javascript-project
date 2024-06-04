@@ -16,9 +16,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    // background-color: #ccc;
     background: linear-gradient(to right, #999, #bbb);
-    // background-color: rgb(234, 51, 35);
     transition: .4s;
     border-radius: 34px;
   }
@@ -30,16 +28,13 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    // background-color: white;
     background: linear-gradient(to right, white, #ccc); /* Gradient colors */
     transition: .4s;
     border-radius: 50%;
   }
 
   .toggle-input:checked + .toggle-slider {
-    // background-color: rgb(234, 51, 35);
     background: linear-gradient(to right, #999, #aaa); /* Gradient colors */
-    // background: linear-gradient(to right, darkred, rgb(234, 51, 35)); /* Gradient colors */
   }
 
   .toggle-input:checked + .toggle-slider:before {
